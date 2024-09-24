@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "api-gateway"
+version = "0.1.0"
+description = "API Gateway"
+authors = ["SciBourne <bourne-sci-hack@yandex.ru>"]
+license = "GPLv3"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.0"
+versioned-fastapi = "^1.0.2"
+hypercorn = "^0.17.3"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+mypy = "^1.11.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
