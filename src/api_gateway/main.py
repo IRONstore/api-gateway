@@ -6,7 +6,7 @@ from versioned_fastapi import FastApiVersioner
 from hypercorn.asyncio import serve
 from hypercorn.config import Config
 
-from .routers import router
+from routers import router
 
 
 
