@@ -12,10 +12,12 @@ fastapi = "^0.115.0"
 versioned-fastapi = "^1.0.2"
 hypercorn = "^0.17.3"
 
-
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.3"
 mypy = "^1.11.2"
+
+[tool.poetry.scripts]
+api-gateway = "api_gateway.main:start"
 
 [build-system]
 requires = ["poetry-core"]
